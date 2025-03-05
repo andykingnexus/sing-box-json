@@ -311,6 +311,7 @@
       "server": "local"
     },
     "auto_detect_interface": true,
+    "final": "漏网之鱼",
     "rules": [
       {
         "inbound": [
@@ -397,9 +398,6 @@
       {
         "rule_set": "geosite-geolocation-!cn",
         "outbound": "Global"
-      },
-      {
-        "final": "漏网之鱼"
       }
     ],
     "rule_set": [
