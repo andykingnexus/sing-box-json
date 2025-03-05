@@ -331,11 +331,7 @@
         "outbound": "🎵 TikTok"
       },
       {
-        "rule_set": "geoip-apple",
-        "outbound": "🍏 Apple"
-      },
-      {
-        "rule_set": "geoip-telegram",
+        "rule_set": ["geoip-telegram", "geosite-telegram"],
         "outbound": "📲 Telegram"
       },
       {
@@ -346,6 +342,8 @@
         "rule_set": [
           "geoip-cn",
           "geosite-cn"
+          "geosite-apple",
+          "geoip-cn",
         ],
         "outbound": "🎯 全球直连"
       }
@@ -370,6 +368,13 @@
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/tiktok.srs",
+        "download_detour": "🚀 节点选择"
+      },
+      {
+        "tag": "geosite-telegram",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/telegram.srs",
         "download_detour": "🚀 节点选择"
       },
       {
