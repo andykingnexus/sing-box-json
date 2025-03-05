@@ -190,13 +190,6 @@
       ]
     },
     {
-      "tag": "China",
-      "type": "selector",
-      "outbounds": [
-        "direct"
-      ]
-    },
-    {
       "tag": "HongKong",
       "type": "selector",
       "outbounds": [
@@ -410,24 +403,6 @@
           "geosite-cn"
         ],
         "outbound": "direct"
-      },
-      {
-        "rule_set": [
-          "geosite-hbo",
-          "geosite-primevideo"
-        ],
-        "outbound": "Global"
-      },
-      {
-        "rule_set": [
-          "geoip-netflix",
-          "geosite-netflix"
-        ],
-        "outbound": "Netflix"
-      },
-      {
-        "rule_set": "geosite-disney",
-        "outbound": "Disney+"
       },
       {
         "rule_set": "geosite-geolocation-!cn",
