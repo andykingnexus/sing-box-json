@@ -9,7 +9,7 @@
         "tag": "google",
         "type": "tls",
         "server": "8.8.8.8",
-        "detour": "Proxy"
+        "detour": "auto"
       },
       {
         "tag": "local",
@@ -97,15 +97,6 @@
   ],
   "outbounds": [
     {
-      "tag": "Proxy",
-      "type": "selector",
-      "outbounds": [
-        "auto",
-        "direct",
-        "{all}"
-      ]
-    },
-    {
       "tag": "OpenAI",
       "type": "selector",
       "outbounds": [
@@ -185,7 +176,18 @@
         "Japan",
         "America",
         "Others",
-        "direct"
+      ]
+    },
+    {
+      "tag": "漏网之鱼",
+      "type": "selector",
+      "outbounds": [
+        "direct",
+        "Taipei",
+        "Singapore",
+        "Japan",
+        "America",
+        "Others"
       ]
     },
     {
@@ -309,7 +311,6 @@
       "server": "local"
     },
     "auto_detect_interface": true,
-    "final": "Proxy",
     "rules": [
       {
         "inbound": [
@@ -337,7 +338,7 @@
       },
       {
         "clash_mode": "global",
-        "outbound": "Proxy"
+        "outbound": "Global"
       },
       {
         "domain": [
@@ -396,6 +397,9 @@
       {
         "rule_set": "geosite-geolocation-!cn",
         "outbound": "Global"
+      },
+      {
+        "final": "漏网之鱼"
       }
     ],
     "rule_set": [
