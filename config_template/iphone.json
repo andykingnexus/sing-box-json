@@ -13,7 +13,7 @@
     "servers": [
       {
         "tag": "proxyDns",
-        "address": "tls://1.1.1.1",
+        "address": "tls://8.8.8.8",
         "address_resolver": "localDns",
         "detour": "🚀 节点选择",
         "address_strategy": "ipv4_only"
