@@ -331,7 +331,10 @@
         "outbound": "🎵 TikTok"
       },
       {
-        "rule_set": ["geoip-telegram", "geosite-telegram"],
+        "rule_set":[
+          "geoip-telegram",
+          "geosite-telegram"
+        ],
         "outbound": "📲 Telegram"
       },
       {
@@ -341,9 +344,9 @@
       {
         "rule_set": [
           "geoip-cn",
-          "geosite-cn"
+          "geosite-cn",
           "geosite-apple",
-          "geoip-cn",
+          "geoip-cn"
         ],
         "outbound": "🎯 全球直连"
       }
