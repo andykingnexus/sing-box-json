@@ -14,7 +14,7 @@
     "servers": [
       {
         "tag": "google",
-        "type": "h3",
+        "type": "tls",
         "server": "1.1.1.1",
         "detour": "auto"
       },
